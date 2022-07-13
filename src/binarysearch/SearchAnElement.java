@@ -1,4 +1,4 @@
-package codefromscratch;
+package binarysearch;
 
 public class SearchAnElement {
 
