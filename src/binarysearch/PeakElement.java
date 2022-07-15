@@ -9,7 +9,7 @@ public class PeakElement {
 
 		while (left <= right) {
 			mid = left + (right - left) / 2;
-
+			//if the mid is start or end of the array, it is enough to check the other adjacent element is lower.
 			if ((mid == 0 || nums[mid - 1] <= nums[mid]) && (mid == nums.length - 1 || nums[mid] >= nums[mid + 1]))
 				return mid;
 			else if (mid > 0 && nums[mid - 1] > nums[mid])
